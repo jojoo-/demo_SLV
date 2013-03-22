@@ -1,37 +1,30 @@
-// i'll do this for one image, so you see the concept
-// hope it works.. just off the top of my head
-//
-// first, you need a stored imageposition
+// this code sucks at many levels, it is just a demo.
+//I never learned OOP in Java.
+
+//This Code is Based on Daniel Shiffmans example code at
+// http://www.learningprocessing.com/examples/chapter-5/draggable-shape/
+
+
 int imgX, imgY;
-// and an image
+
 int maxpics = 7;
 
-// mouseposition offset to image
-//int mX, mY;
-//Draggable d;
-//Draggable d2;
-//Draggable d3;
-//Draggable ds[];
+
 
 Draggable[] ds=new Draggable[maxpics+1];
 
-// regular old setup
 void setup()
 {
-  
- //d = new Draggable(50,50,300,200,1);
- //d2 = new Draggable(300,300,300,200,2);
  
  for (int nu = 1; nu < maxpics +1 ; nu++) {
    ds[nu] = new Draggable((nu*100)-100,((nu*100)-100),400,300,nu);
-   //if (nu == 2) {java.awt.Toolkit.getDefaultToolkit().beep();}
+   
    
  }
  
  
  size(1400,800);
- //img = loadImage("1_0.png");
- // Draggable d1 = d;
+
 }
 
 // draw method
@@ -43,8 +36,7 @@ void draw()
   //if (nu==2) { java.awt.Toolkit.getDefaultToolkit().beep();}
   }
   
-  //d.rollover(mouseX,mouseY); d.drag(mouseX,mouseY); d.display();
-  //d2.rollover(mouseX,mouseY); d2.drag(mouseX,mouseY); d2.display();
+
   
 }
 
@@ -61,9 +53,7 @@ for (int nu = 1; nu < maxpics +1 ; nu++) {
 
 void mouseClicked()
   {
-  //d.singleclick(mouseX,mouseY);
-  //d2.singleclick(mouseX,mouseY);
-  
+    
 for (int nu = 1; nu < maxpics +1 ; nu++) {
   ds[nu].singleclick(mouseX,mouseY);
   }
@@ -80,24 +70,6 @@ for (int nu = 1; nu < maxpics +1 ; nu++) {
   
 }
 
-// any key pressed, will re-center the image
-//void keyPressed()
-//{
-//centerImage();
-//}
-
-// center image function
-//void centerImage()
-//{
-// imgX = (width-img.width)/2;
-// imgY = (height-img.height)/2;
-//}
-
-
-// Click and Drag an object
-// Daniel Shiffman 
-
-// A class for a draggable thing
 
 class Draggable {
   PImage img;
