@@ -6,6 +6,14 @@ Die Demo dient dazu, das Strukturlegeverfahren Förderziele an einem Whiteboard 
 
 Installation 
 ===============================================================================================
+
+Binary
+-------
+Um sofort loszulegen hier die Binarys
+http://users.zankapfel.org/~jojoo/misc/demo_SLV.zip
+
+From Source
+--------------
 * Repo Forken
 * Processing installieren
 * .pde öffnen
@@ -15,5 +23,6 @@ Warum gibt es das hier
 ===============================================================================================
 Weil ich die Präsentation sowieso veröffentlichen wollte und zur Präsentation auch dieses Programm gehört.
 
-= Codequalität =
+Codequalität
+================
 Das ist ein Demo, die läuft. Ich habe mich seit 10 Jahren nicht mehr mit Objektorietierter Programierung herumgeschlagen, dementsprechend mies ist die Qualität des Codes, etwas Vererbung etc würde dem Code sicher gut tun.
